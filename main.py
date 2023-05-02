@@ -1,6 +1,6 @@
 import json
 
-with open('data/data_final.json', 'r') as f:
+with open('data/data_test.json', 'r') as f:
     data = json.load(f)
 
 
@@ -37,10 +37,14 @@ def get_min(T, depart):
     for noeud in T:
         if (dist := noeud['distance']) != None and not noeud["lock"]:
             if (dist_min := min['distance']) != None:
-                if dist_min > dist:
+                if dist_min >= dist:
                     min = noeud
             else:
                 min = noeud
+        elif dist == None:
+            print('noeud non initialisé')
+        elif noeud["lock"]:
+            print('noeud lock')
     return min
 
 def dijkstra(node_depart, node_arrivee):
@@ -80,10 +84,12 @@ def dijkstra(node_depart, node_arrivee):
                             noeud['parent'] = min['name']
                             noeud['distance'] = min['distance'] + piste['longueur']
                             print('ici')
+                        print('noeud:', noeud['name'])
 
             min['lock'] = True
             min = get_min(T, node_depart)
             print('min', get_min(T, node_depart))
+        print('distance', T[node_arrivee]['distance'])
                             
 
             

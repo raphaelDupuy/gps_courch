@@ -1,0 +1,74 @@
+{
+    "noeuds": [
+        {
+            "name": "COL DE CHANROSSA"
+          },
+          {
+            "name": "n2"
+          },
+          {
+            "name": "CREUX"
+          },
+          {
+            "name": "n4"
+          },
+          {
+            "name": "bas Roc merlet"
+          },
+          {
+            "name": "haut Pyramides"
+          }
+    ],
+    "pistes": [
+        {
+            "name": "p1",
+            "noeud_depart": "COL DE CHANROSSA",
+            "noeud_fin": "n2",
+            "longueur": 10
+        },
+        {
+            "name": "p2",
+            "noeud_depart": "CREUX",
+            "noeud_fin": "n2",
+            "longueur": 5
+        },
+        {
+            "name": "p3",
+            "noeud_depart": "n4",
+            "noeud_fin": "haut Pyramides",
+            "longueur": 13
+        },
+        {
+            "name": "p4",
+            "noeud_depart": "COL DE CHANROSSA",
+            "noeud_fin": "haut Pyramides",
+            "longueur": 18
+        },
+        {
+            "name": "p5",
+            "noeud_depart": "bas Roc merlet",
+            "noeud_fin": "CREUX",
+            "longueur": 7
+        },
+        {
+            "name": "p6",
+            "noeud_depart": "COL DE CHANROSSA",
+            "noeud_fin": "n4",
+            "longueur": 7
+        },
+        {
+            "name": "p7",
+            "noeud_depart": "CREUX",
+            "noeud_fin": "n4",
+            "longueur": 4
+        },
+        {
+            "name": "p8",
+            "noeud_depart": "haut Pyramides",
+            "noeud_fin": "bas Roc merlet",
+            "longueur": 20
+        }
+    ]
+
+
+}
